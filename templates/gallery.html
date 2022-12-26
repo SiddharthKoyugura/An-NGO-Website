@@ -1,0 +1,35 @@
+{% include "header.html" %}
+
+<section id="portfolio" class="portfolio">
+    {% if is_admin: %}
+        <div class="admin-section">
+            <a class="btn btn-primary admin-button" href="{{ url_for('add_gallery_image') }}" role="button">Add image</a>
+        </div>
+    {% endif %}
+
+    <div class="container" >
+       <div class="section-title">
+        <h2>Our Gallery</h2>
+       </div>
+       <div class="row portfolio-container">
+            {% for image in gallery: %}
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+                            <img src="{{ url_for('gallery_image', id=image.id) }}" class="img-fluid">
+                            {% if is_admin: %}
+                                <div class="portfolio-info">
+                                    <button class="btn btn-primary" onclick="window.location.href=`{{ url_for('delete_image', id=image.id) }}`">Delete</button>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+        </div>
+  
+     </div>
+ </div>
+</section>
+
+
+
+{% include "footer.html" %}

@@ -1,0 +1,43 @@
+{% include "header.html" %}
+
+  <!---main_body-->
+  {% if is_admin: %}
+    <div class="admin-section">
+        <a class="btn btn-primary admin-button" href="{{ url_for('add_event') }}" role="button">Add Event</a>
+    </div>
+  {% endif %}
+
+  <section>
+    <div class="container-fluid py-4 my-4 bg-light">
+      <div class="about text-center">
+        <h2 class="mb-5">EVENTS<hr class="green-hr"></h2>
+    </div>
+    <hr>
+    <!--project ahaar-->
+    {% for event in all_events: %}
+        <div class="row justify-content-start">
+        <div class="col-md-5" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+            <img src="{{ url_for('event_image', id=event.id) }}" class="img-fluid" alt="project-ahaar">
+        </div>
+        <div class="col-md-7 pt-4" data-aos="fade-left">
+            <h2>{{ event.title }}</h2>
+            <h4><b><a href="#">{{ event.subtitle }}</a></b></h4>
+            <p class="font-italic">
+            {{ event.description }}
+            </p>
+        {% if is_admin: %}
+            <a class="btn btn-primary" href="{{ url_for('event_update', id=event.id) }}" role="button">Update</a>
+            <a class="btn btn-primary" href="{{ url_for('event_delete', id=event.id) }}" role="button">Delete</a>
+        {% endif %}
+        </div>
+        </div>
+        <hr>
+    {% endfor %}
+    <!--covid-19 awareness-->
+  </section>
+  <!--main_body_end-->
+
+
+<!---------footer---------->
+{% include "footer.html" %}

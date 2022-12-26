@@ -1,0 +1,311 @@
+{% include "header.html" %}
+<!--------------------------------------- header image --------------------------------------->
+<div id="header">
+	  <div class="container text-center">
+		<div class="header-box">
+			<h1>Grand Mother Educational and Philosophical Development Society</h1>
+		</div>
+	 </div>
+</div>
+<!---------------------------------------- jumbotron ---------------------------------------->
+<div class="container-fluid">
+<div class="row jumbotron">
+    <div class="col-xs-20 col-sm-12 col-md-20 col-lg-20 col-xl-100" >
+        <h1 class="text-center" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-delay="100">WHO WE ARE AND WHAT DO WE DO?</h1>
+		<div class="border1 "></div>
+        <p class="text-center px-md-5">Welcome to the website of Spoorty organisation, a non-profit organization dedicated to Educate , Empower, Teach. We are committed to making a difference in the world by Believing everything by scientifically proving, Educating, empowering Students and helping the needy people.
+        </p>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2 text-center">
+        <a href="{{ url_for('about') }}"><button type="button" class="btn btn-lg border border-secondary read-more">Know More</button></a>
+    </div>
+</div>
+</div>
+<!---------------------------------- welcome section ------------------------------------->
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+      <div class="col-12">
+          <h1 data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-delay="100">About our team!</h1>
+      <div class="border1"></div>
+      </div>
+      <div class="col-12">
+          <p>Our team is composed of passionate individuals who strive to make a positive impact on the lives of those we serve. We are committed to providing quality services and programs that are tailored to meet the needs of our community.
+          </p>
+      </div>
+  </div>
+</div>
+<!-------------------------------------- Three column section --------------------------------->
+<section class="services section-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-md-4 d-flex align-items-stretch" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-delay="100">
+                <div class="icon-box" >
+                  <div class="icon"><i class="fa fa-hands-helping fa-3x"></i></div>
+                  <h4><a href="">Join us!</a></h4>
+                  <p>We believe in the power of collaboration and strive to create meaningful partnerships with other organizations and individuals who share our vision. Our goal is to create lasting change through education, advocacy, and service.
+                </p>
+                <p>
+                  We invite you to join us in making a difference. Together, we can make a real difference in the lives of those we serve. Thank you for your support!
+                </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="100">
+                <div class="icon-box" >
+                  <div class="icon"><i class="fa fa-university fa-3x"></i></div>
+                  <h4><a href="">Teaching</a></h4>
+                  <p>In todays world, everyone needs to be educated. To survive in this world, More literacy isn't enough. Our kids are taught alphabets to alpha beta gama. We make sure that at the end of the day, the child doesn't only have fun but learn somthing of value.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-delay="100">
+                <div class="icon-box" >
+                  <div class="icon"><i class="fa fa-box fa-3x"></i></div>
+                  <h4><a href="">Donate us</a></h4>
+                  <p>The simplest and quickest way to make a donation, so you can support people in need. Start donating for our campaigns to support poor people and children returning to school.</p>
+                </div>
+              </div>
+             
+			 </div>
+          </div>
+        </div>
+	 </div>
+ </section>
+<!------------------- EDUCATION @TRPWS SECTION --------------------------->
+<section id="portfolio" class="portfolio section-bg">
+      <div class="container" >
+         <div class="section-title">
+          <h2>EDUCATION</h2>
+         </div>
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100">
+              <img src="{{ url_for('static', filename='./images/home_images/1-1.jpeg') }}" class="img-fluid">
+              <div class="portfolio-info">
+                <h4>WE LOVE</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="100">
+              <img src="{{ url_for('static', filename='./images/home_images/1-2.jpeg') }}" class="img-fluid">
+              <div class="portfolio-info">
+                <h4>WE CARE</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+              <img src="{{ url_for('static', filename='./images/home_images/1-3.jpeg') }}" class="img-fluid">
+              <div class="portfolio-info">
+                <h4>WE TEACH</h4>
+              </div>
+            </div>
+          </div>
+			
+       </div>
+   </div>
+</section>
+<!----------------------------- Portfolio Section ------------------------------>
+<section id="portfolio" class="portfolio">
+      <div class="container" >
+         <div class="section-title">
+          <h2>Our Gallery</h2>
+          <p>We reach out to children and make them interact with young people from universities and teach them in a friendly way so as to provide them with a family environment for learning, make them understand our culture and hardships they need to overcome in the journey of their life.</p>
+         </div>
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100">
+              <img src="{{ url_for('static', filename='./images/home_images/2-1.jpeg') }}" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="100">
+              <img src="{{ url_for('static', filename='./images/home_images/2-2.jpeg') }}" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+              <img src="{{ url_for('static', filename='./images/home_images/2-3.jpeg') }}" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100">
+              <img src="{{ url_for('static', filename='./images/home_images/2-4.jpeg') }}" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="100">
+              <img src="{{ url_for('static', filename='./images/home_images/2-5.jpeg') }}" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+              <img src="{{ url_for('static', filename='./images/home_images/2-6.jpeg') }}" class="img-fluid">
+            </div>
+          </div>
+    
+       </div>
+   </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+  <div class="container" >
+     <div class="section-title">
+      <h2>News</h2>
+     </div>
+
+    <div class="row portfolio-container">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100">
+          <img src="{{ url_for('static', filename='./images/News/1.jpeg') }}" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="100">
+          <img src="{{ url_for('static', filename='./images/News/2.jpeg') }}" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+          <img src="{{ url_for('static', filename='./images/News/3.jpeg') }}" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100">
+          <img src="{{ url_for('static', filename='./images/News/4.jpeg') }}" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="100">
+          <img src="{{ url_for('static', filename='./images/News/5.jpeg') }}" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+          <img src="{{ url_for('static', filename='./images/News/6.jpeg') }}" class="img-fluid">
+        </div>
+      </div>
+
+   </div>
+</div>
+</section>
+<!--------------------------------- Testinomials -------------------------------------->
+<div class="testimonials">
+	   <div class="inner ">
+		    <h1>TESTIMONIALS</h1>
+		     <div class="border1"></div>
+		       
+		     <div class="row1">
+		        <div class="col" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100">
+				   <div class="testimonial" style="padding-bottom: 32px;">
+					 <img src="{{ url_for('static', filename='./images/testimonial-images/girl.png') }}">
+					 <div class="name">Shilpi Gupta</div>
+					   <div class="stars">
+					     <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+					   </div>
+					   <p>It's a great place for people who want to do social work. Environment is good very friendly. Spoorthy Organization is doing great by helping the poor children to achieve their dreams .</p>
+				   </div>
+			    </div>
+				 
+				 <div class="col" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="100">
+				   <div class="testimonial">
+            <img src="{{ url_for('static', filename='./images/testimonial-images/girl.png') }}">
+					 <div class="name">Akshita Babutta</div>
+					   <div class="stars">
+					     <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+					   </div>
+					   <p>I have been working with Spoorthy Organization from past 3 weeks and it feels great to be part of this organisation. Each and every team member is extremely supportive and enthusiastic towards their work.</p>
+				   </div>
+			    </div>
+				 
+				 <div class="col" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+				   <div class="testimonial">
+            <img src="{{ url_for('static', filename='./images/testimonial-images/boy.jpg') }}">
+					 <div class="name">Bineet Singh</div>
+					   <div class="stars">
+					     <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+					   </div>
+					   <p>Spoorthy Organization is doing an absolute exemplary work by giving these little kids a beautiful life not only by the means of education but also through their overall development.</p>
+				   </div>
+			    </div>
+				 
+				 <div class="col" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="100">
+				   <div class="testimonial">
+            <img src="{{ url_for('static', filename='./images/testimonial-images/girl.png') }}">
+					 <div class="name">Khushi Atolia</div>
+					   <div class="stars">
+					     <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+					   </div>
+					   <p>This NGO is doing amazing work by helping for upliftment of the children from slum so they have a good career and a brighter future.The things they do without any help from the government or any other organization is just remarkable and worth mentioning.</p>
+				   </div>
+			    </div>
+				 
+				 <div class="col" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+				   <div class="testimonial">
+            <img src="{{ url_for('static', filename='./images/testimonial-images/boy.jpg') }}">
+					 <div class="name">Devesh Mittal</div>
+					   <div class="stars">
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+						 <i class="fas fa-star"></i>
+					   </div>
+					   <p>Spoorthy Organization is working for a noble and selfless cause... Providing education to children who do not have access to it is highly appreciated... and I feel pleased to be a part of this group...</p>
+				   </div>
+			    </div>
+
+          <div class="col" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100">
+            <div class="testimonial">
+              <img src="{{ url_for('static', filename='./images/testimonial-images/boy.jpg') }}">
+            <div class="name">Naryan Jain</div>
+              <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              </div>
+              <p>I had a great experience while working with Spoorthy Organization as a volunteer meanwhile learnt a lot of things through this organization. Spoorthy team members have the heart filled with kindness and love.</p>
+            </div>
+           </div>
+				 
+		      </div>
+		</div>
+</div>
+
+{% include "footer.html" %}
