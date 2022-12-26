@@ -144,7 +144,22 @@
     </div>
   </section>
 
-  <section class="services">
+  <style>
+    .img-fluid{
+      width: 200px;
+      height: 200px;
+    }
+    @media (max-width: 768px) {
+      .register{
+        text-align: center;
+      }
+      .register .section-title{
+        text-align: left;
+      }
+    }
+  </style>
+
+  <section class="services register">
     <div class="container">
       <div class="row ">
         <div class="col-lg-4">
@@ -153,7 +168,7 @@
           </div>
         </div>
         <div class="col-lg-4 justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <p style="width:fit-content;"><strong> To join us <a href="https://forms.gle/rwVwqFbY5VwLb1Zi8" target="_blank" class="btn btn-primary">Click here!</a></strong></p>
+          <p><strong> To join us <a href="https://forms.gle/rwVwqFbY5VwLb1Zi8" target="_blank" class="btn btn-primary">Click here!</a></strong></p>
         </div>
         <div class="col-lg-4 " data-aos="fade-up" >
           <img src="{{ url_for('static', filename='images/1.png') }}" class="img-fluid" alt="joinUs">
