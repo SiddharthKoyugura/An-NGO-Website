@@ -646,6 +646,14 @@ figure {
   background-color: #009970 !important ;
   color: #fff !important;
 }
+
+.pay-don {
+  margin: 0 auto;
+}
+
+.pay-img {
+  text-align: center;
+}
 /*---------------project aahar css end---------*/
 
 /*Contact us page css*/
