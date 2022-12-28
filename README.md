@@ -1,1 +1,1 @@
-#### Web launch internship project, at which I've developed an NGO Website of Spoorthy Organization
+#### Weblaunch internship project, at which I've developed an NGO Website of Spoorthy Organization
