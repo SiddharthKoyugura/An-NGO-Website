@@ -175,8 +175,16 @@ section {
     width: 33%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .contact-img {
+    display: none;
+  }
+}
+
 .about-name {
   padding-top: 10px;
+  font-size: 30px;
 }
 
 /*flip card part*/
