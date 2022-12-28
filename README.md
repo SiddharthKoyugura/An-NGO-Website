@@ -1,1 +1,1 @@
-#### Spoorthy Organization's internship project where I've made their Website using Flask
+#### Web launch internship project, at which I've developed an NGO Website of Spoorthy Organization
