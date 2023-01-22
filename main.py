@@ -229,4 +229,4 @@ def logout():
     return redirect(url_for("home"))
 
 if __name__ == "__main__":
-    app.run(debug=True, host="localhost", port=8080)
+    app.run(debug=False, host="https://spoorthi-webapp.onrender.com/", port=8080)
